@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px;
+    max-width: 400px;
+    border: 3px solid #222;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: right;
+    color: #222;
+    font-size: 2em;
+    border: 3px solid #222;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    word-wrap: break-word;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.btn {
+    background-color: #e0e0e0;
+    border: 1px solid #222;
+    padding: 23px 35px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #c44c4c;
+}
+
+.btn:active {
+    background-color: #c44c4c;
+}
+
+.buttons .equal {
+    background-color: #f08a24;
+    color: #fff;
+}
+
+.equal-sign {
+    background-color: #ff4d4d;
+    color: white;
+    grid-column: span 2;
+    border: 1px solid #222;
+    padding: 10px 83px;
+}
+
+.equal-sign:hover {
+    background-color: #c44c4c;
+}
+
+.equal-sign:active {
+    background-color: red;
+}
+
+.button.btn::nth-child(1) {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.button.btn::nth-child(2) {
+    padding-left: 33px;
+    padding-right: 32px;
+}
+
+
+.button.btn::nth-child(3) {
+    padding-right: 36px;
+    padding-left: 36px;
+}
+
+.clear-sign {
+    background-color: #ff4d4d;
+    color: white;
+    grid-column: span 2;
+    border: 1px solid #222;
+}
+
+.clear-sign:hover {
+    background-color: #c44c4c;
+}
+
+.clear-sign:active {
+    background-color: rgb(255, 157, 0);
+}
+
+
+
+@media (max-width:500px) {
+    .btn {
+        padding: 15px;
+        font-size: 1em;
+    }
+    .display {
+        font-size: 1.5em;
+    }
+}
