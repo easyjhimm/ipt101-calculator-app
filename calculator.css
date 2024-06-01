@@ -14,7 +14,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 500px;
+    height: max-content;
     max-width: 400px;
     border: 3px solid #222;
     overflow: hidden;
@@ -34,16 +34,15 @@ body {
 }
 
 .button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 .btn {
     background-color: #e0e0e0;
     border: 1px solid #222;
-    padding: 23px 35px;
+    padding: 23px 15px;
     font-size: 1.2em;
     border-radius: 5px;
     cursor: pointer;
@@ -69,7 +68,7 @@ body {
     color: white;
     grid-column: span 2;
     border: 1px solid #222;
-    padding: 10px 83px;
+    grid-column: span 2;
 }
 
 .equal-sign:hover {
@@ -99,7 +98,6 @@ body {
 .clear-sign {
     background-color: #ff4d4d;
     color: white;
-    grid-column: span 2;
     border: 1px solid #222;
 }
 
